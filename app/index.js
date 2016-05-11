@@ -63,12 +63,101 @@ return (
 
 // 1.header component ends here
 
+//2.1 attendence table colum component start here
+
+var SmallOne= React.createClass({
+
+render: function ()  {
+
+return (
+
+<div> attendence table colum component !! </div>
+
+	)
+
+
+}
+
+
+
+});
+
+
+//2.1. attendence table colum component end here
+
+//2.2. attendence table data component start here
+
+var SmallTwo= React.createClass({
+
+render: function ()  {
+
+return (
+
+<div> attendence table  data component !! </div>
+
+	)
+
+
+}
+
+
+
+});
+
+
+//2.2. attendence table data component end here
+
+
+//2. body component start here
+
+var BodyAll= React.createClass({
+
+render: function ()  {
+
+return (
+
+<div> <SmallOne /> <SmallTwo  /> </div>
+
+	)
+
+
+}
+
+
+
+});
+
+
+//2. body  component end here
+
+
+//0. Complete ui component start here
+
+var AllUi= React.createClass({
+
+render: function ()  {
+
+return (
+
+<div> <BigAll /> <BodyAll  /> </div>
+
+	)
+
+
+}
+
+
+
+});
+
+
+//0. complete ui component end here
 
 
 
 ReactDOM.render(
 
-<BigAll  />,
+<AllUi  />,
 
 document.getElementById('app')  
 
